@@ -2,11 +2,13 @@
 <script>
     function search() {
         var t = document.querySelector('#t'),
-            url = 'https://hhd2009.github.io/' + t//默认跳转到主站点
+        var main_site='https://hhd2009.github.io/'
+            url =  main_site + t.value //默认跳转到主站点
             ;
         switch (t.value) {
             case '网易': url = 'https://www.163.com'; break;
             case '百度': url = 'https://www.baidu.com'; break;
+            case '音乐': url = main_site + '/music'; break;
             //更多。。。
         }
         window.open(url)
