@@ -1,0 +1,14 @@
+<input type="text" id="t" /><input type="button" value="搜索" onclick="search()" />
+<script>
+    function search() {
+        var t = document.querySelector('#t'),
+            url = 'https://ask.csdn.net/'//默认跳转到问答
+            ;
+        switch (t.value) {
+            case '网易': url = 'https://www.163.com'; break;
+            case '百度': url = 'https://www.baidu.com'; break;
+            //更多。。。
+        }
+        window.open(url)
+    }
+</script>
