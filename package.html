@@ -1,0 +1,13 @@
+<input type="text" id="t" /><input type="button" value="搜索" onclick="search()" />
+<script>
+    function search() {
+        var t = document.querySelector('#t'),
+            main_site = 'https://hhd2009.github.io/',
+            url =  main_site + 'package/' + t.value 
+            ;
+        switch (t.value) {
+            //更多。。。
+        }
+        window.open(url)
+    }
+</script>
